@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="행정정보 통합관리 기본법의 조항을 검색하고 열람하는 페이지입니다.">
+    <meta name="theme-color" content="#12325b">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312325b'/%3E%3Cpath d='M18 17h28v30H18z' fill='white'/%3E%3Cpath d='M24 25h16M24 32h16M24 39h11' stroke='%2312325b' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+    <title>행정정보 통합관리 기본법 | 조항 검색</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#law-list">본문 바로가기</a>
+
+    <header class="masthead">
+      <div class="masthead__inner">
+        <div class="wordmark" aria-label="행정안전부 디지털정부실">
+          <span class="wordmark__mark" aria-hidden="true">행정</span>
+          <span>행정안전부 디지털정부실</span>
+        </div>
+        <div class="document-state">
+          <span class="document-state__badge">가상 법령</span>
+          <span>시행 2026. 7. 1.</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="search-panel" aria-labelledby="page-title">
+        <div class="search-panel__heading">
+          <div>
+            <p class="eyebrow">법률 제99999호 · 2026. 6. 1. 제정</p>
+            <h1 id="page-title">행정정보 통합관리 기본법</h1>
+          </div>
+          <p class="search-panel__note">본칙 14개 조항 · 부칙 1개 조항</p>
+        </div>
+
+        <div class="search-box">
+          <svg class="search-box__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" />
+          </svg>
+          <label class="visually-hidden" for="q">조항 본문 검색</label>
+          <input id="q" type="search" placeholder="조항 본문 검색 (예: 기본계획, 개인정보)" autocomplete="off">
+          <button id="clear-search" class="clear-button" type="button" aria-label="검색어 지우기" hidden>지우기</button>
+        </div>
+
+        <div class="result-summary" aria-live="polite" aria-atomic="true">
+          <span id="count">결과 0건</span>
+          <span id="query-summary">전체 조항을 표시합니다.</span>
+        </div>
+      </section>
+
+      <section id="law-list" class="law-list" aria-label="법령 조항 목록" aria-busy="true">
+        <div class="loading-state" role="status">조항을 불러오는 중입니다.</div>
+      </section>
+    </main>
+
+    <footer>
+      <p>이 페이지의 법령은 교육용 가상 자료이며 실제 법령이 아닙니다.</p>
+      <p>행정안전부 디지털정부실</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
